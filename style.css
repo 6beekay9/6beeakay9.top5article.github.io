@@ -1,0 +1,114 @@
+
+body{
+    background-color: rgba(128, 128, 128, 0.404);
+}
+.heading {
+    text-align: center;
+    background-color: blue;
+    color: aliceblue;
+    padding: 12px 0px;
+    margin-top: 14px;
+    border-radius: 15px;
+}
+
+ nav {
+    background-color: rgb(77, 77, 172);
+    padding: 20px 60px;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+
+}
+
+li {
+    display: inline-block;
+    padding: 0px 20px 0px 0px;
+    margin: 0;
+
+    border-radius: 8px;
+}
+
+li a {
+    display: block;
+    padding: 5px 10px;
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(153, 153, 35);
+    opacity: 70%;
+    border-radius: 6px;
+
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns:(3, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-item img {
+    margin-top: 15px;
+    width: 100%;
+    height: auto;
+    border: 2px solid blue;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(77, 77, 172, 0.377);
+    backdrop-filter: blur(5px);
+    backdrop-filter: sepia(10px);
+    /* Adjust the overlay background color and transparency */
+    color: #fff;
+    /* Adjust the overlay text color */
+    opacity: 0;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+
+.grid-item:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay h3, .overlay p {
+    margin: 2;
+  }
+  
+  .overlay h3 {
+    font-size: 18px; /* Adjust the headline font size */
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .overlay p {
+    font-size: 14px; /* Adjust the description font size */
+  }
+
+footer {
+    text-align: center;
+    background-color: darkgray;
+    padding: 40px;
+    margin: 40px;
+    border-radius: 15px;
+    position: relative;
+}
